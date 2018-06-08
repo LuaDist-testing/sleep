@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "sleep"
-version = "1.0.0-2"
+version = "1.0.0-3"
 -- LuaDist source
 source = {
-  tag = "1.0.0-2",
+  tag = "1.0.0-3",
   url = "git://github.com/LuaDist-testing/sleep.git"
 }
 -- Original source
@@ -26,7 +26,6 @@ build = {
    variables = {
      CMAKE_C_FLAGS="$(CFLAGS)",
      CMAKE_MODULE_LINKER_FLAGS="$(LIBFLAG)",
-     LUA="$(LUA)",
-     LIBDIR="$(LIBDIR)",
+     LUAROCKS_INSTALL_LIBDIR="$(LIBDIR)",
    },
 }
